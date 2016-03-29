@@ -52,4 +52,5 @@ node default {
           ensure => present,
         }
   include users
+  include skeleton
 }
