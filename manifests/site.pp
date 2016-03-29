@@ -51,6 +51,4 @@ node default {
           ip => '127.0.0.1',
           ensure => present,
         }
-  include users
-  include skeleton
-}
+  }
