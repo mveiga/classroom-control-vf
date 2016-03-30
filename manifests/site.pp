@@ -53,6 +53,6 @@ node default {
         }
   if $::virtual {
     $hypervisor = capitalize($::virtual)
-    notice ("Hypervisor is $hypervisor") 
+    notify ("Hypervisor is $hypervisor") 
     }  
   }
