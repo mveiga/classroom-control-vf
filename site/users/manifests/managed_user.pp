@@ -23,7 +23,7 @@ define user::managed_user  (
          file { $sshdir: 
                ensure => directory,
                mode => 0700,
-               require => File ["$userhome"],
+               require => File["$userhome"],
               }
                
         }
