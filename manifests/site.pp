@@ -51,4 +51,8 @@ node default {
           ip => '127.0.0.1',
           ensure => present,
         }
+  if $::virtual {
+    $hypervisor = capitalize($::virtual)
+    notice ("Hypervisor is $hypervisor") 
+    }  
   }
