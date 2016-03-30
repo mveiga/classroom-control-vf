@@ -2,7 +2,7 @@ define users::managed_user  (
         $username = $title,
         $userhome = "/home/${title}",
         $groupname = $title,
-        $sshdir = "${userhome}/.ssh"
+        $sshdir = "${userhome}/.ssh",
       ){
         File {
              owner => $username,
