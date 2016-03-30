@@ -17,11 +17,11 @@ define users::managed_user  (
               }
         file { $userhome: 
                ensure => directory,
-               mode => 0755,
+               mode => '0755',
               }
          file { "$userhome/.ssh" : 
                ensure => directory,
-               mode => 0700,
+               mode => '0700',
                require => File["$userhome"],
               }
                
